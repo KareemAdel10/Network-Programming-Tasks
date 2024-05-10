@@ -1,0 +1,7 @@
+The code is designed to handle messages of any size.
+
+In the server-side code, it first receives the length of the message using recv(HEADER_LENGTH), where HEADER_LENGTH is set to 4 bytes, assuming that the length of the message will be sent as a 4-byte integer. This allows the server to know how much data to expect.
+
+Then, it enters a loop to receive the message data in chunks until it has received the entire message. The loop continues until the total received bytes equal the expected message length.
+
+Similarly, in the client-side code, it sends the message length followed by the message data. This ensures that the server knows how much data to expect.
