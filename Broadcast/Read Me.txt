@@ -1,0 +1,2 @@
+
+In this modified chat room application, messages sent by a client are now broadcasted to all other connected clients, ensuring that the sender doesn't receive their own message. This enhances the user experience by preventing message duplication and creating a more streamlined communication environment within the chat room.
